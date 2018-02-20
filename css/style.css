@@ -1,0 +1,156 @@
+html, body{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #f6f6f4;
+}
+h2{
+	padding: 20px;
+}
+.content-wrapper{
+	max-width: 800px;
+	margin: auto;
+}
+.page{
+	position: relative;
+	width: inherit;
+}
+.bottom{
+	margin-bottom: 100px;
+}
+.start{
+	height: 600px;
+	background-color: #082841;
+	border-bottom: 3px solid black; 
+	color: white;
+}
+.title{
+	text-align: center;
+	font-size: 30px;
+	margin: 10px;
+}
+.cont{
+	display: grid;
+	grid-template-areas: "me info"
+}
+.info{
+	padding: 25px;
+}
+.aboutme{
+	margin-top: 25%;
+}
+.img{
+	height: 600px;
+}
+.screen{
+	width: 300px;
+	border-radius: 4px;
+	box-shadow: 10px 15px 5px #aaaaaa;
+}
+.ex1{ grid-area: exo; }
+.ex2{ grid-area: ext; }
+.ex3{ grid-area: extr; }
+.ex4{ grid-area: exc; }
+.expact{
+	display: grid;
+	grid-template-areas: "exo ext ext" "extr extr exc";
+	grid-gap: 5px;
+}
+.ex{
+	background-color: #E6F0F0;
+	padding: 2px;
+	padding-left: 20px;
+	border-radius: 4px;
+}
+.item{
+	display: grid;
+	grid-template-areas: "scr text";
+}
+.text{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.left{
+	width: 400px;
+	padding-left: 30px;
+}
+.right{
+	width: 400px;
+}
+.contc{
+	background-color: #E6F0F0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.contact{
+	display: grid;
+	grid-template-areas: "left right";
+}
+input, textarea, button{
+	width: 300px;
+	margin: 3px;
+	padding: 3px;
+}
+a{
+	text-decoration: none;
+	color: #DD3E18;
+}
+a:hover{
+	text-decoration: underline;
+}
+input[type="text"] {
+   border: 1px solid #cccccc;
+   border-radius: 3px;
+   background: #ffffff; 
+   outline: none;
+   height: 24px;
+}
+textarea{
+   border: 1px solid #cccccc;
+   border-radius: 3px;
+   background: #ffffff; 
+   outline: none;
+}
+button{
+    background-color:  #DD3E18; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 700px){
+	.expact{
+	display: grid;
+	grid-template-areas: "exo ext" "extr exc";
+	grid-gap: 2px;
+    }
+
+    .contact{
+	display: grid;
+	grid-template-areas: "left" "right";
+    }
+}
+
+@media only screen and (max-width: 500px){
+	
+	.me{
+		display: none;
+	}
+	.expact{
+	display: grid;
+	grid-template-areas: "exo" "ext" "extr" "exc";
+	grid-gap: 2px;
+    }
+    .item{
+	display: grid;
+	grid-template-areas: "scr" "text";
+    }
+    .contact{
+	display: grid;
+	grid-template-areas: "left" "right";
+    }
+}
